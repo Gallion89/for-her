@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff3f5"><title>For My Bangaram ♡</title>
+<style>
+:root{--cream:#fffaf6;--blush:#fff0f3;--rose:#c45d7b;--deep:#793c53;--ink:#5e4149}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,serif;line-height:1.65}
+button{font:inherit;cursor:pointer}section{padding:65px 16px}.wrap{width:min(820px,100%);margin:auto}.center{text-align:center}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--rose)}
+h1,h2,h3{color:var(--deep);line-height:1.15}h1{font-size:clamp(2.8rem,11vw,5.5rem);margin:16px 0}h2{font-size:clamp(2rem,7vw,3.2rem);margin:10px 0 16px}
+p{font-size:1.04rem}.script{font-style:italic;color:var(--rose)}.btn{border:0;border-radius:999px;padding:13px 21px;background:var(--rose);color:white;box-shadow:0 8px 20px #c45d7b25}.btn.alt{background:white;color:var(--deep);border:1px solid #edc8d2;box-shadow:none}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:28px 16px;position:relative;overflow:hidden;background:linear-gradient(145deg,#fffaf6,#fbe5eb)}
+.hero-inner{max-width:680px;position:relative}.float{position:absolute;color:#d17d98;opacity:.55;animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-18px) rotate(8deg)}}.env{width:140px;height:94px;border:0;border-radius:10px;background:#f1c8d4;display:grid;place-items:center;margin:20px auto;box-shadow:0 12px 28px #8b4b6020;font-size:34px;color:var(--rose)}
+.card{background:white;border:1px solid #f0dbe1;border-radius:22px;padding:18px;box-shadow:0 12px 34px #7f3e540b}
+.scrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:26px}.photo{background:white;padding:8px 8px 13px;box-shadow:0 8px 24px #7f3e5415;transform:rotate(-1deg)}.photo:nth-child(even){transform:rotate(1.5deg);margin-top:14px}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#f7dfe6;display:block}.photo p{margin:8px 0 0;text-align:center;color:#875266}
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:16px;margin-top:26px}.screen{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#fbe3e9,#f8eee7);border-radius:13px;overflow:hidden;display:grid;place-items:center}.screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.play{border:0;width:56px;height:56px;border-radius:50%;background:white;color:var(--rose);font-size:23px}
+.reasons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}.reason{padding:16px 10px;border-radius:16px;background:white;border:1px solid #f0dbe1}.reason span{display:block;font-size:25px}
+.letter{display:none;text-align:left;margin:22px auto 0;max-width:650px;background:white;padding:25px;border:1px dashed #dba3b4;border-radius:18px}.letter.show{display:block;animation:appear .5s ease}
+@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}.hint{font:12px/1.6 Arial,sans-serif;color:#956f7a}footer{text-align:center;padding:30px 16px 44px;color:#a16c7d}
+.confetti{position:fixed;z-index:20;top:-20px;animation:fall 3s linear forwards;pointer-events:none}@keyframes fall{to{transform:translateY(110vh) rotate(600deg);opacity:0}}
+@media(max-width:520px){section{padding:52px 14px}.scrap{gap:9px}.photo{padding:6px 6px 11px}.reason{font-size:.93rem;padding:12px 7px}}
+</style></head><body>
+<header class="hero" id="top">
+<span class="float" style="top:10%;left:8%;font-size:32px">♡</span><span class="float" style="top:18%;right:8%;font-size:38px">✿</span><span class="float" style="bottom:12%;left:14%;font-size:27px">♡</span>
+<div class="hero-inner"><div class="eyebrow">a tiny surprise, made just for you</div>
+<button class="env" id="env" onclick="openSurprise()" aria-label="Open your surprise">♡</button>
+<p class="script">Psst… this little surprise is for someone very special. 💌</p>
+<button class="btn" id="open" onclick="openSurprise()">Open your surprise ♡</button>
+<div id="welcome" hidden><h1>Happy Birthday,<br><span class="script">My Bangaram</span> ♡</h1>
+<p>I made you a little corner of the internet, filled with memories, silliness, and so much love.</p>
+<button class="btn" onclick="document.querySelector('#memories').scrollIntoView()">Come see what I made for you ✨</button><p class="hint">27 · 10 · 2026</p></div></div></header>
+
+<section id="memories"><div class="wrap center"><div class="eyebrow">little moments, big feelings</div><h2>Our Little Scrapbook ♡</h2><p>A few moments I wish I could keep in my pocket forever.</p>
+<div class="scrap">
+<div class="photo"><img src="photos/memory1.jpg" alt="Our first memory"><p>My favourite hello ♡</p></div>
+<div class="photo"><img src="photos/memory2.jpg" alt="Our second memory"><p>You + me = ♡</p></div>
+<div class="photo"><img src="photos/memory3.jpg" alt="Our third memory"><p>A moment to keep ✨</p></div>
+<div class="photo"><img src="photos/memory4.jpg" alt="Our fourth memory"><p>One of a million reasons</p></div>
+</div><p class="hint">Add photos to the photos folder and name them memory1.jpg through memory4.jpg.</p></div></section>
+
+<section style="background:#fff0f3" id="videos"><div class="wrap center"><div class="eyebrow">press play, keep the memory</div><h2>Little Moments With My Bangaram 🎬</h2><p>Little clips, favourite memories, and things I wish I could replay forever.</p>
+<div class="videos">
+<article class="card"><div class="screen" id="video1"><div><button class="play" aria-label="Video placeholder">▶</button><div class="hint">Your video will appear here</div></div></div><h3>A Moment I'll Always Treasure ♡</h3><p>A little memory, forever in my heart.</p></article>
+<article class="card"><div class="screen" id="video2"><div><button class="play" aria-label="Video placeholder">▶</button><div class="hint">Your video will appear here</div></div></div><h3>Something Just for You 💌</h3><p>A tiny reminder that you're special.</p></article>
+<article class="card"><div class="screen" id="video3"><div><button class="play" aria-label="Video placeholder">▶</button><div class="hint">Optional third video</div></div></div><h3>One More Little Memory ✨</h3><p>Because replays are never enough.</p></article>
+</div><p class="hint">Video setup instructions are included in README.txt.</p></div></section>
+
+<section><div class="wrap center"><div class="eyebrow">a very incomplete list</div><h2>A Few Reasons You're My Favourite</h2><div class="reasons">
+<div class="reason"><span>🌷</span>Your smile makes ordinary days better.</div><div class="reason"><span>🤭</span>You make me laugh when I least expect it.</div>
+<div class="reason"><span>🫶</span>I can be myself around you.</div><div class="reason"><span>✨</span>You make little moments feel special.</div>
+<div class="reason"><span>💗</span>You have the cutest place in my heart.</div><div class="reason"><span>🥹</span>Simply because you're you, my Bangaram.</div></div><p class="hint">Replace these starter lines with your own inside jokes and memories.</p></div></section>
+
+<section style="background:#fff6f7"><div class="wrap center"><div class="eyebrow">important birthday business</div><h2>One very serious question…</h2><div class="card"><div style="font-size:2.5rem">🥹💗</div><div class="question">Do you know how ridiculously loved you are?</div><p id="answer">Choose wisely, birthday girl. There may or may not be a tiny reward.</p>
+<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap"><button class="btn" onclick="answerYes()">YES, OBVIOUSLY 💅</button><button class="btn alt" id="no" onclick="answerNo()">NO? 🤨</button></div></div></div></section>
+
+<section><div class="wrap center"><div class="eyebrow">one last thing, birthday girl</div><h2>A Little Letter for You 💌</h2><button class="btn" onclick="openLetter()">Open your letter ♡</button>
+<div class="letter" id="letter"><p>My Bangaram,</p><p>Happy birthday, my love. ❤️</p><p>I hope this new year of your life brings you happiness, beautiful memories, exciting adventures, and countless reasons to smile.</p><p>I'm so glad I get to know you, care about you, and make little memories with you. I hope this tiny surprise reminds you how special you are to me.</p><p>Keep smiling, keep being your wonderful self, and never forget that someone is cheering for you.</p><p>I hope we keep making memories that we'll look back on and smile about. Thank you for being you.</p><p class="script">Happy birthday, my Bangaram. ♡</p><p>With all my love,<br><strong>Your person 💗</strong></p></div></div></section>
+
+<section class="center"><div class="wrap"><div class="eyebrow">one last little surprise</div><h2>Made just for you 🎂</h2><p>If I could give you one thing today, it would be the ability to see yourself through my eyes. You'd understand why you're so special to me. ♡</p><button class="btn" onclick="celebrate();document.getElementById('hug').hidden=false">Give me one more hug 🫶</button><p id="hug" hidden class="script">Birthday hug delivered! Redeem the real one in person. 🤗💗</p></div></section>
+<footer>Made with love, a little code, and thoughts of you ♡<br><span class="hint">A little birthday keepsake · 27 October 2026</span></footer>
+
+<script>
+function openSurprise(){document.getElementById('welcome').hidden=false;document.getElementById('open').hidden=true;document.getElementById('env').style.transform='rotate(8deg) scale(.8)';celebrate();}
+function answerYes(){document.getElementById('answer').textContent='GOOD. Because I plan on reminding you a whole lot. You are loved, my Bangaram. 💗';celebrate();}
+function answerNo(){document.getElementById('answer').textContent='Excuse me?! Incorrect answer, birthday girl. Try again! 😭💗';let b=document.getElementById('no');b.textContent='WAIT, YES 😳';b.onclick=answerYes;}
+function openLetter(){let l=document.getElementById('letter');l.classList.toggle('show');if(l.classList.contains('show')){celebrate();l.scrollIntoView({behavior:'smooth',block:'nearest'});}}
+function celebrate(){let s=['♡','💗','✿','✨','💕'];for(let i=0;i<22;i++){let e=document.createElement('span');e.className='confetti';e.textContent=s[Math.floor(Math.random()*s.length)];e.style.left=Math.random()*100+'vw';e.style.animationDelay=Math.random()*.7+'s';e.style.fontSize=(16+Math.random()*16)+'px';document.body.appendChild(e);setTimeout(()=>e.remove(),4000);}}
+/* Replace empty strings below with YouTube video IDs. Example:
+   https://www.youtube.com/watch?v=abc123XYZ -> ID is abc123XYZ */
+const videoIds={video1:"",video2:"",video3:""};
+Object.entries(videoIds).forEach(([id,videoId])=>{if(!videoId.trim())return;let box=document.getElementById(id),frame=document.createElement('iframe');frame.src='https://www.youtube-nocookie.com/embed/'+encodeURIComponent(videoId);frame.title='A special memory for my Bangaram';frame.allow='accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share';frame.allowFullscreen=true;frame.loading='lazy';box.replaceChildren(frame);});
+</script></body></html>
